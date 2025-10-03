@@ -208,7 +208,10 @@ body{
 .delete-button:hover {
     background-color: #da190b;
 }
-
+.salvo-recentemente {
+    background-color: #19b626; 
+    transition: background-color 1s ease;
+}
 
 
 @media (max-width: 768px) {
