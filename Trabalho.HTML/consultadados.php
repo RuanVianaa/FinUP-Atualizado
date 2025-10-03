@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+	table,th,td{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+  </style>
 </head>
 
 <body>
@@ -72,31 +78,7 @@
             <?php } ?>
         </tbody>
     </table>
-                <div class="informacoes-gerais">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" >
-                </div>
-                <div class="informacoes-gerais">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" >
-                </div>
-                <div class="informacoes-gerais">
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha">
-                </div>
-                <div class="informacoes-gerais">
-                    <label for="nascimento">Data de Nascimento:</label>
-                    <input type="date" id="nascimento" name="nascimento">
-                </div>
-                <div class="informacoes-gerais">
-                    <label for="sexo">Sexo:</label>
-                    <input type="text" id="sexo" name="sexo">
-                </div>
-                 <div class="informacoes-gerais">
-                    <label for="cpf">CPF:</label>
-                    <input type="text" id="cpf" name="cpf">
-                </div>
-                
+               
                 
 
                 <div class="botoes-perfil">
