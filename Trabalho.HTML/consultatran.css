@@ -1,0 +1,289 @@
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #f9f7f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    background-color: #bcddc0;
+    height: auto;
+    flex-wrap: wrap; 
+}
+.logo{
+    width: 90px;
+    height: auto;
+}
+
+.main-nav{ 
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+.main-nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#585858;
+    border-radius: 20px;
+    padding: 8px 15px; 
+    height: auto; 
+    width: auto; 
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    white-space: nowrap; 
+    border: 2px solid transparent;
+}
+.main-nav li a:hover{
+    background-color: #0d5b69;
+    color: white;
+    border: 2px solid #0d5b69;
+}
+.main-nav li a.active{ 
+    background-color: #0b4650;
+    color: white;
+    border: 2px solid #0b4650;
+}
+
+.rodape { 
+    margin-top: auto; 
+    background-color: #bcddc0;
+    padding: 20px;
+    text-align: center;
+    color: #585858;
+    font-size: 16px; 
+}
+
+
+
+.transacoes {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1; 
+}
+
+.transacoes-section h1 {
+    color: rgb(106, 153, 136);
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.descricao-transacoes {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.filtro-transacoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro-transacoes .filtro-inserir,
+.filtro-transacoes .filtro-select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex: 1; 
+    min-width: 150px; 
+    max-width: 250px; 
+}
+
+.filtro-transacoes .adicionar-transacao {
+    background-color: #0b4650;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.filtro-transacoes .adicionar-transacao:hover {
+    background-color: #0d5b69;
+}
+
+.tabela-container {
+    overflow-x: auto; 
+    width: 100%;
+}
+
+.tabela-transacoes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; 
+    min-width: 600px;
+}
+
+.tabela-transacoes th,
+.tabela-transacoes td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tabela-transacoes th {
+    background-color: rgb(106, 153, 136);
+    color: white;
+    font-weight: bold;
+}
+
+.tabela-transacoes tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela-transacoes tbody tr:hover {
+    background-color: #e8f5e9;
+}
+
+.tabela-transacoes input[type="text"],
+.tabela-transacoes input[type="date"],
+.tabela-transacoes select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 0.95rem;
+}
+
+.filtro-transacoes select {
+    background-color: white;
+}
+
+.actions-cell {
+    text-align: center;
+}
+
+.actions-cell button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin: 0 4px;
+    transition: background-color 0.2s ease;
+}
+
+.edit-button {
+    background-color: #2196F3; 
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0b7dda;
+}
+
+.delete-button {
+    background-color: #f44336; 
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #da190b;
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .main-nav {
+        margin-top: 15px;
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%;
+    }
+    .main-nav li a {
+        width: 80%; 
+        max-width: 250px; 
+        margin: 0 auto; 
+    }
+    .logo {
+        width: 10rem;
+    }
+
+    .transactions-main {
+        padding: 20px 15px;
+    }
+    .transacoes-section h1 {
+        font-size: 1.8rem;
+    }
+    .descricao-transacoes {
+        font-size: 1rem;
+    }
+
+    .filtro-transacoes {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    .filtro-transacoes .filtro-inserir,
+    .filtro-transacoes .filtro-select,
+    .filtro-transacoes .adicionar-transacao {
+        width: 100%;
+        max-width: none;
+    }
+
+    .tabela-transacoes th,
+    .tabela-transacoes td {
+        padding: 10px 8px;
+        font-size: 0.9em;
+    }
+    .actions-cell {
+        display: flex; 
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+    .actions-cell button {
+        padding: 6px 10px;
+        margin: 2px; 
+    }
+
+    .rodape {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        width: 8rem;
+    }
+    .transactions-section h1 {
+        font-size: 1.5rem;
+    }
+    .section-description {
+        font-size: 0.9rem;
+    }
+
+}
